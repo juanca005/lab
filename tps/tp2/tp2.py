@@ -3,13 +3,17 @@
 import threading
 import time
 import random
+<<<<<<< HEAD
 from threading import Barrier
 from threading import Semaphore
 from threading import Event
+=======
+>>>>>>> 55260bd8190cdc137ae5aeba0697a181604488bf
 
 lugares_bote = []
 viajes = 0
 
+<<<<<<< HEAD
 barrier= Barrier(4)
 mutex=Semaphore(1)
 hincha_river=0
@@ -46,11 +50,20 @@ def hincha_river():
 
 
 
+=======
+def hincha_river():
+    """ Implementar funcion para subir al bote ....si es que se puede ..."""
+    print("vamos river")
+
+>>>>>>> 55260bd8190cdc137ae5aeba0697a181604488bf
 def hincha_boca():
     """ Implementar funcion para subir al bote ....si es que se puede ..."""
     print("vamos boca")
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 55260bd8190cdc137ae5aeba0697a181604488bf
 def barra_brava_river():
     """ Generacion de hinchas de River"""
     while viajes < 20:
@@ -65,6 +78,7 @@ def barra_brava_boca():
         b = threading.Thread()
         b.start()
 
+<<<<<<< HEAD
 
 t1 = threading.Thread(name="hinchaRiver", target=hincha_river)
 t2 = threading.Thread(name="hinchaBoca", target=hincha_boca)
@@ -74,3 +88,10 @@ t1.join()
 t2.join()
 
 print("terminaron los viajes ")
+=======
+t1 = threading.Thread()
+t2 = threading.Thread()
+
+print("terminaron los viajes ")
+
+>>>>>>> 55260bd8190cdc137ae5aeba0697a181604488bf

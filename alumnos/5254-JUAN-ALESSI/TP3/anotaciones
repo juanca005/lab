@@ -1,0 +1,4 @@
+ab -n 100 -c 3  -X 127.0.0.1:8080 http://www.um.edu.ar/   PARA PROBAR CONEXIONES SIMULTANEAS AL PROXY
+
+corregir el problema de la www.um.edu.ar que da un error en la linea en blanco
+
